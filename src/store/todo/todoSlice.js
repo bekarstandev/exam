@@ -12,7 +12,7 @@ export const todoSlice = createSlice({
     reducers: {
         addTodo: (state, action) => {
             const todo = {
-                id: 1,
+                id: Math.random() * 100,
                 text: action.payload,
             };
             state.todos.push(todo);
